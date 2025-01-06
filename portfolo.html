@@ -1,0 +1,164 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <script src="https://kit.fontawesome.com/8ca8f558fa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <div id="header">
+<div class="container">
+    <nav>
+        <img src="" alt="">
+        <ul>
+            <li><a href="#HOME">Home</a></li>
+            <li><a href="#about">About</a></li>
+            
+            <li><a href="#portfolio">My project</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+    </nav>
+    <div class="header-text">
+        <p> WEB DEVELOPER</p>
+        <h1>Hii, I'm  <span>Mathivanan</span><br> from Coimbatore</h1>
+    </div>
+</div>
+ </div>
+ <!-- ----about---- -->
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="/HTML/download.jpeg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>I am a passionate and motivated web developer with a strong foundation in front-end technologies. As a recent graduate (or self-taught), I have gained proficiency in key programming languages such as HTML5, CSS3, JavaScript, and basic frameworks like React and Bootstrap. I am also familiar with back-end technologies like Node.js,  and databases like MySQL -basic.</p>
+            <div class="tab-title">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                <p class="tab-links " onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-content helo-tab " id="skills">
+                <ul>
+                    <li><span> Web development<br></span>Web app development.</li>
+                    <li> <span>Desinger<br> </span>To creat unqie design page.</li>
+                    <li> <span>Developer<br> </span> user friendly web pages creat.</li>
+                </ul>
+            </div>
+            <div class="tab-content" id="Education">
+                <ul>
+                    <li><span>2024<br></span>Bsc computer science from dr.sns rajalakshmi collage of arts and science.</li>
+                    <li> <span>2021<br> </span> HLC from G.H.S.S.</li>
+                    <li> <span>2019<br> </span> S.S.L.C from G.H.S.S.</li>
+                </ul>
+            </div>
+            <div class="tab-content" id="Experience">
+                <ul>
+                    <li><span> Intern For Btree system<br></span> junior web application/web developer in four month.</li>
+                    <li><span>Intern For Sun software solution<br> </span> junior web application/web developer in four month.</li>
+                    
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+
+  </div>
+<!-- ------portfolio------->
+  <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My project</h1>
+
+       <div class="project-list">
+        <div class="projects">
+            <img src="/HTML/WhatsApp Image 2025-01-05 at 19.55.22_db137043.jpg" alt="" height="150">
+            <div class="layer">
+                <h3>weather</h3>
+                <p>Sample creat the weather sets in  Html and css</p><br>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="projects">
+            <img src="/HTML/WhatsApp Image 2025-01-05 at 20.11.05_dad69fd8.jpg" alt="" height="150px">
+            <div class="layer">
+                <h3>Animation in ball</h3>
+                <p>To using HTML and CSS create the looping the ball jumbing</p><br>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="projects">
+            <img src="/HTML/WhatsApp Image 2025-01-05 at 20.04.58_dbb0af60.jpg" alt="" height="150px">
+            <div class="layer">
+                <h3>Social media platform</h3>
+                <p> All Social media wesite page in one website </p> <br>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+       </div>
+       <a href="#" class="btn">see more</a>
+    </div>
+  </div>
+  <!-- -----contect---- -->
+
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>mathimathi4444@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 9360578216 </p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-square-twitter"></i></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></i></a>
+                </div>
+                <a href="mathi.cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="name" placeholder="you name " required>
+                    <input type="email" name="email" placeholder="you email " required>
+                    <textarea name="message" rows="6" placeholder="your message" ></textarea>
+                      <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>made with<i class="fa-solid fa-heart"></i> @Mathivanan </p>
+    </div>
+   </div>
+
+
+
+
+ 
+    <script>
+        var tablinks= document.getElementsByClassName("tab-links")
+        var tablinks= document.getElementsByClassName("tab-content")
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tablink of tablinks){
+                tablink.classList.remove("helo-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("helo-tab")
+        }
+
+
+    
+    
+
+
+
+
+    </script>
+</body>
+</html>
